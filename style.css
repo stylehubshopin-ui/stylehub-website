@@ -164,3 +164,28 @@ nav a {
 .hero {
   margin-top: 20px;
 }
+.main-header{
+  background:#111;
+  color:#f5f0e6;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 16px;
+}
+
+.brand{
+  text-align:center;
+  font-family: 'Times New Roman', serif;
+}
+
+.brand .big{
+  font-size:28px;
+  letter-spacing:4px;
+  display:block;
+}
+
+.brand .small{
+  font-size:11px;
+  letter-spacing:3px;
+  opacity:.8;
+}
