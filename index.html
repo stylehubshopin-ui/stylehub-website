@@ -1,78 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Style Hub | Premium Men's Fashion</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>The Style Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f6f6f6;
+    }
+
+    /* TOP OFFER BAR */
+    .offer-bar {
+      background: #000;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      padding: 6px;
+    }
+
+    /* HEADER */
+    .header {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu {
+      font-size: 22px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: #d4af37; /* GOLD */
+    }
+
+    .icons {
+      font-size: 20px;
+    }
+
+    /* CATEGORIES */
+    .categories {
+      display: flex;
+      overflow-x: auto;
+      background: #fff;
+      padding: 10px 0;
+    }
+
+    .cat {
+      text-align: center;
+      min-width: 80px;
+      font-size: 12px;
+    }
+
+    .cat img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    /* BANNER */
+    .banner {
+      position: relative;
+      margin: 10px;
+    }
+
+    .banner img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .banner-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+    }
+
+    .banner-text h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .banner-text p {
+      margin: 5px 0;
+    }
+
+    .banner-text button {
+      background: #f5c400;
+      border: none;
+      padding: 10px 18px;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      font-weight: 600;
+    }
+
+    /* BOTTOM NAV */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav div {
+      font-size: 12px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="logo">
-  <span class="logo-the">THE</span>
-  <span class="logo-style">STYLE</span>
-  <span class="logo-hub">HUB</span>
-</div>
-</header>
-  <
-
-  <!-- PRODUCTS -->
-  <section id="products" class="products">
-    <h2>Featured Collection</h2>
-
-    <div class="product-grid">
-      <div class="card">
-        <h3>Formal Suit</h3>
-        <p class="price">₹4999</p>
-        <button>Add to Cart</button>
-      </div>
-<header class="header">
-  <div class="menu">☰</div>
-  <div class="logo">STYLE HUB</div>
-  <div class="icons">🔍 🛒</div>
-</header>
-
-<section class="categories">
-  <div>SHIRTS</div>
-  <div>T-SHIRTS</div>
-  <div>TROUSERS</div>
-  <div>WINTER</div>
-</section>
-
-<section class="banner">
-  <div class="banner-text">
-    <h1>Season's Favorite</h1>
-    <h2>SHIRTS</h2>
-    <p>Starting at just ₹899</p>
-    <button>SHOP NOW</button>
+  <!-- OFFER -->
+  <div class="offer-bar">
+    Extra 10% OFF | Use Code: STYLE10
   </div>
-</section>
-      <div class="card">
-        <h3>Stylish Shirt</h3>
-        <p class="price">₹1999</p>
-        <button>Add to Cart</button>
-      </div>
 
-      <div class="card">
-        <h3>Casual Trouser</h3>
-        <p class="price">₹2499</p>
-        <button>Add to Cart</button>
-      </div>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="menu">☰</div>
+    <div class="logo">THE STYLE HUB</div>
+    <div class="icons">🔍 🛒</div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="categories">
+    <div class="cat">
+      <img src="https://via.placeholder.com/60" />
+      <div>Combos</div>
     </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>📞 8318337618</p>
-    <p>📧 stylehub.store.in@gmail.com</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Style Hub. All rights reserved.</p> 
-  </footer>
-
-</body>
-</html>
+    <div class="cat">
+      <img src="https://via.placeholder.com/60" />
+      <div>Shirts</div>
+    </div>
+    <div class="cat">
+      <img src="https://via.placeholder.com/60" />
+      <div>Trousers</div>
+    </div>
+    <div class="cat">
+      <img src="https://via.placeholder.com/60" />
+      <div>Winterwear</div>
+    </div>
+    <div class="cat">
+      <img src="https://via.placeholder.com/60" />
+      <div>T-Shirts</div>
